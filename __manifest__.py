@@ -27,6 +27,8 @@ Long description of module's purpose
         'security/res_group.xml',
         #view
         'views/res_partner_views.xml',
+        'views/purchase_quotation_views.xml',
+        'views/sales_quotation_views.xml',
         'views/views.xml',
         'views/templates.xml',
     ],
