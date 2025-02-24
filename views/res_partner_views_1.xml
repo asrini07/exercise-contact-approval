@@ -1,0 +1,28 @@
+<odoo>
+
+    <record id="view_partner_form_inherit" model="ir.ui.view">
+        <field name="name">res.partner.inherit.form</field>
+        <field name="res_model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <!-- <xpath expr="//form/sheet" position="inside">
+                <group>
+                    <field name="state" widget="statusbar" options="{'clickable': False}" readonly="state in('approved', 'cancelled')"/>
+                </group>
+            </xpath> -->
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <field name="state" widget="statusbar" options="{'clickable': False}" readonly="state in('approved', 'cancelled')"/>
+                </header>
+            </xpath>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="res_contact_partner_action">
+        <field name="name">Contact Partner</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+</odoo>
