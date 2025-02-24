@@ -23,10 +23,12 @@ Long description of module's purpose
     # always loaded
     'data': [
         #security
-        'security/ir.model.access.csv',
         'security/res_group.xml',
+        'security/ir.model.access.csv',
+       
         #view
         'views/res_partner_views.xml',
+        'views/contact_approval_menus.xml',
         'views/purchase_quotation_views.xml',
         'views/sales_quotation_views.xml',
         'views/views.xml',
@@ -36,5 +38,6 @@ Long description of module's purpose
     'demo': [
         'demo/demo.xml',
     ],
+    #'application': True
 }
 

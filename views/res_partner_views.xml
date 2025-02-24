@@ -5,7 +5,7 @@
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="arch" type="xml">
-                 <xpath expr="//sheet" position="before">
+                <xpath expr="//sheet" position="before">
                     <header>
                         <button name="action_approve" invisible="state in('approved', 'cancelled')" string="Approve" type="object" class="oe_highlight" />
                         <button name="action_cancel" invisible="state in('approved', 'cancelled')" string="Cancel" type="object" class="oe_highlight"/>

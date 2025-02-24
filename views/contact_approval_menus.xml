@@ -1,0 +1,9 @@
+<odoo>
+
+    <!-- Top Menu Item-->
+    <menuitem name="Contact Partner" id="contact_partner_root" />
+
+    <!-- menu categories -->
+    <menuitem name="Contact Approval" id="contact_partner_list" parent="contact_partner_root" action="res_contact_partner_action"/>
+
+</odoo>
