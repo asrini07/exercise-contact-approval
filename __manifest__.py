@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "contactApproval",
+    'name': "contact_approval",
 
     'summary': "Short (1 phrase/line) summary of the module's purpose",
 

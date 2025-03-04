@@ -7,10 +7,12 @@
             <field name="arch" type="xml">
                 <xpath expr="//sheet" position="before">
                     <header>
-                        <button name="action_approve" invisible="state in('approved', 'cancelled')" string="Approve" type="object" class="oe_highlight" />
-                        <button name="action_cancel" invisible="state in('approved', 'cancelled')" string="Cancel" type="object" class="oe_highlight"/>
-                        <button name="action_reset" invisible="state in('draft')" string="Reset" type="object" class="oe_secondary" />
-                        <field name="state" widget="statusbar" options="{'clickable': False}" readonly="state in('approved', 'cancelled')"/>
+                        <group groups="exercise-contact-approval.group_contact_approval_manager">
+                            <button name="action_approve" invisible="state in('approved', 'cancelled')" string="Approve" type="object" class="oe_highlight" />
+                            <button name="action_cancel" invisible="state in('approved', 'cancelled')" string="Cancel" type="object" class="oe_highlight"/>
+                            <button name="action_reset" invisible="state in('draft')" string="Reset" type="object" class="oe_secondary" />
+                            <field name="state" widget="statusbar" options="{'clickable': False}" readonly="state in('approved', 'cancelled')"/>
+                        </group>
                     </header>
                 </xpath>
                 <xpath expr="//field[@name='vat']" position="after">

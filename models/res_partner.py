@@ -23,6 +23,7 @@ class ResPartner(models.Model):
     def action_reset(self):   
         for rec in self:
             rec.state = 'draft'
+            rec.approver_id = False
 
     def action_cancel(self):   
         for rec in self:
